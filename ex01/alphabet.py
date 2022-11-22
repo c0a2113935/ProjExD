@@ -38,6 +38,7 @@ def kaitou(abs_chars):
         print("不正解です。")
     else:
         print("正解です。それでは、具体的に欠損文字を1つずつ入力してください。")
+
         for i in range(num):
             ans = input(f"{i + 1}つ目の文字を入力してください：")
             if ans not in abs_chars:
@@ -51,9 +52,11 @@ def kaitou(abs_chars):
             
 
 if __name__ == "__main__":
-    st = time.time()
+    
     alphabet = [chr(i + 65) for i in range(num_of_alphabet)]
+    st = time.time()
     print(alphabet)
+    
     for _ in range(num_of_trials):
         abs_chars = shutudai(alphabet)
         ret = kaitou(abs_chars)
