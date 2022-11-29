@@ -46,7 +46,6 @@ for ope in operators:
     button.bind("<1>", button_click)
     y += 1
 
-
 option=["/","AC"]
 for opu in option:
     button = tk.Button(root, text=f"{opu}", width=4, height=2, font=("", 30))
