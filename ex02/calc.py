@@ -27,7 +27,8 @@ entry.grid(row=0,column=0,columnspan=5)
 
 
 r, c = 1, 0
-for num in range(9, -1, -1):
+operands = ["7","8","9","4","5","6","1","2","3","0"]
+for num in operands:
     button = tk.Button(root, text=f"{num}", width=4, height=2, font=("", 30))
     button.grid(row=r, column=c)
     button.bind("<1>", button_click)
