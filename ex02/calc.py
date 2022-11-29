@@ -1,7 +1,6 @@
 import tkinter as tk
 import tkinter.messagebox as tkm
 
-
 def button_click(event):
     btn = event.widget
     num = btn["text"]
@@ -13,16 +12,19 @@ def button_click(event):
         entry.delete(0,tk.END)
         entry.insert(tk.END,res)
 
-    elif num=="AC":               #Cを押すことにより数字全消去
-        entry.delete(0,tk.END)    
+    elif num=="AC":               #CAを押すことにより数字全消去
+        entry.delete(0,tk.END)
+
     else:
         entry.insert(tk.END,num)
+
 
 root = tk.Tk()
 root.geometry("380x500")
 root.configure(bg="black")
 entry=tk.Entry(root,justify="right",width=14,font=("",40),bg="azure")
 entry.grid(row=0,column=0,columnspan=5)
+
 
 r, c = 1, 0
 for num in range(9, -1, -1):
@@ -54,5 +56,5 @@ for opu in option:
     if c%3 == 0:
         r += 1
         c = 0
-    
+
 root.mainloop()
