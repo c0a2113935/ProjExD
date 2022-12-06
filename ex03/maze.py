@@ -65,6 +65,7 @@ if __name__ == "__main__":
     key = ""
     root.bind("<KeyPress>", key_down)
     root.bind("<KeyRelease>", key_up)
-   
+    img_goal = tk.PhotoImage(file="fig/goal.png")
+    goal_item = canvas.create_image(1360, 750, image=img_goal, tag="goal")
     main_proc()
     root.mainloop()
