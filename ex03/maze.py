@@ -10,8 +10,6 @@ def count_up():
     jid=root.after(1000,count_up)
 
 
-
-
 def key_down(event):
     global key
     key = event.keysym
@@ -41,7 +39,6 @@ def main_proc():
     canvas.coords("kokaton", cx, cy)
     root.after(100, main_proc)
     
-
 
 if __name__ == "__main__":
     root = tk.Tk()
