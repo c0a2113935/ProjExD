@@ -138,8 +138,8 @@ def main():
         #リンゴを取ると早くなる
         if rngo_rct:
             if tori_rct.colliderect(rngo_rct):
-                ax+=3
-                ay+=3
+                ax+=1
+                ay+=1
                 rngo_rct = None
 
         #毒を取ると遅くなる
