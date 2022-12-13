@@ -65,7 +65,9 @@ def main():
     scrn_sfc.blit(bomb_sfc, bomb_rct) 
 
     vx, vy = +1, +1
-    ax ,ay = 3, 3
+
+
+    ax ,ay = 3, 3  #速さの初期値
 
     #速さと大きさと色が違う爆弾を追加
     bomb1_sfc = pg.Surface((50, 50)) # 正方形の空のSurface
@@ -107,6 +109,7 @@ def main():
                 tori_rct.centerx -= ax          
         scrn_sfc.blit(tori_sfc, tori_rct) 
         scrn_sfc.blit(hole_sfc,hole_rct)
+        
         if doku_rct:
             scrn_sfc.blit(doku_sfc,doku_rct)
         if rngo_rct:
