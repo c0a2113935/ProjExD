@@ -47,9 +47,6 @@ def main():
     doku_sfc.blit(doku_sfc,doku_rct)
 
 
-    
-    
-
     # 練習３
     tori_sfc = pg.image.load("fig/6.png")
     tori_sfc = pg.transform.rotozoom(tori_sfc, 0, 2.0)
@@ -66,8 +63,8 @@ def main():
     bomb_rct.centerx = random.randint(0, scrn_rct.width)
     bomb_rct.centery = random.randint(0, scrn_rct.height)
     scrn_sfc.blit(bomb_sfc, bomb_rct) 
-    vx, vy = +1, +1
 
+    vx, vy = +1, +1
     ax ,ay = 3, 3
 
     #速さと大きさと色が違う爆弾を追加
