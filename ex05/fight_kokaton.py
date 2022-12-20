@@ -203,10 +203,10 @@ def main():
         for i in range(5):
             bkd_lst[i].update(scr)
             if kkt.rct.colliderect(bkd_lst[i].rct):
-                return
+              return
             if kkt2.rct.colliderect(bkd_lst[i].rct):
-                return
-     
+              return
+
         tk.update(scr)
         if kkt.rct.colliderect(tk.rct):
             return
