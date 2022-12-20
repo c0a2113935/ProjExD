@@ -7,7 +7,7 @@ import os
 main_dir = os.path.split(os.path.abspath(__file__))[0]
 
 
-def load_image(file):
+def load_image(file):      #BGMを作成
     """loads an image, prepares it for play"""
     file = os.path.join(main_dir, "data", file)
     try:
@@ -17,7 +17,7 @@ def load_image(file):
     return surface.convert()
 
 
-def load_sound(file):
+def load_sound(file): 
     """because pygame can be be compiled without mixer."""
     if not pg.mixer:
         return None
@@ -70,7 +70,7 @@ class Bird:
         self.blit(scr) 
         
 
-class Bird2:
+class Bird2:  #こうかとん２対目
     key_delta = {
         pg.K_w:  [0, -1],
         pg.K_s:  [0, +1],
@@ -99,7 +99,7 @@ class Bird2:
         self.blit(scr) 
 
       
-class Teki:
+class Teki: #細菌を増やしました。
     def __init__(self,img_path,vxy, scr:Screen):
         self.sfc= pg.image.load(img_path)
         self.sfc.set_colorkey((0, 0, 0))
