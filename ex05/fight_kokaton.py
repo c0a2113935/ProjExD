@@ -162,10 +162,8 @@ def main():
         pg.mixer.music.load(music)
         pg.mixer.music.play(-1)
 
-    # 練習１
     scr = Screen("逃げろ！こうかとん", (1600,900), "fig/pg_bg.jpg")
 
-    # 練習３
     kkt = Bird("fig/6.png", 2.0, (900,400))
     kkt.update(scr)
 
@@ -177,10 +175,9 @@ def main():
     tk = Teki("fig/baikin.png",(ax,ay),scr)
     tk.update(scr)
 
-    # 練習５
     bkd_lst=[]
-    colors = ["red","green","blue","yellow","magenta"]
-    for i in range(5):
+    colors = ["red","green","blue"]
+    for i in range(3):
         color = colors[i]
         vx = random.choice([-2,2])
         vy = random.choice([-2,2])
@@ -189,7 +186,6 @@ def main():
         bkd_lst.append(bkd)
     bkd.update(scr)
 
-    # 練習２
     while True:        
         scr.blit()
 
@@ -200,7 +196,7 @@ def main():
         kkt.update(scr)
         kkt2.update(scr)
         
-        for i in range(5):
+        for i in range(3):
             bkd_lst[i].update(scr)
             if kkt.rct.colliderect(bkd_lst[i].rct):
               return
