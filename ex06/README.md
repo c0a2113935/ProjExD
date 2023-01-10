@@ -16,5 +16,6 @@
 - [ ] 敵を増やす
 - [ ] 落とし穴を作る
 - [ ] 強化アイテムを作る
+
 #　ばい菌にあたった場合
-(https://user-images.githubusercontent.com/85731028/211504051-8fa8934f-ab84-4218-8745-41ccd87fb674.png)
+![ばい菌にあたった場合](https://user-images.githubusercontent.com/85731028/211504051-8fa8934f-ab84-4218-8745-41ccd87fb674.png)
